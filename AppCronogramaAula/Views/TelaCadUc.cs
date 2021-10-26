@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AppCronogramaAula.Views
+namespace CronogramaAula
 {
-    public partial class TelaSalaCadastro : Form
+    public partial class TelaCadUc : Form
     {
-        public TelaSalaCadastro()
+        public TelaCadUc()
         {
             InitializeComponent();
         }
