@@ -26,6 +26,18 @@ namespace AppCronogramaAula.Views
 
         private void button4_Click(object sender, EventArgs e)
         {
+            Aluno.NomeAluno = tbBuscaNome.Text;
+            AlunoController aluno = new();
+            dataGridViewNomeAluno.DataSource = aluno.visuNomeAluno();
+            dataGridViewNomeAluno.Columns[0].Visible = false;
+            dataGridViewNomeAluno.Columns[1].Visible = false;
+            dataGridViewNomeAluno.Columns[2].Visible = false;
+            dataGridViewNomeAluno.Columns[3].Visible = false;
+            dataGridViewNomeAluno.Columns[4].HeaderCell.Value = "Código";
+            dataGridViewNomeAluno.Columns[5].HeaderCell.Value = "Aluno";
+            dataGridViewNomeAluno.Columns[6].HeaderCell.Value = "E-mail";
+            dataGridViewNomeAluno.Columns[7].HeaderCell.Value = "Fone";
+
 
         }
 

@@ -31,14 +31,14 @@ namespace AppCronogramaAula.Views
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewNomeAluno = new System.Windows.Forms.DataGridView();
             this.Código = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnPesquisarNome = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.tbBuscaNome = new System.Windows.Forms.TextBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tbMostraCodigo = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -56,7 +56,7 @@ namespace AppCronogramaAula.Views
             this.label1 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewNomeAluno)).BeginInit();
             this.tabPage1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,10 +72,10 @@ namespace AppCronogramaAula.Views
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.dataGridView1);
-            this.tabPage2.Controls.Add(this.button4);
+            this.tabPage2.Controls.Add(this.dataGridViewNomeAluno);
+            this.tabPage2.Controls.Add(this.btnPesquisarNome);
             this.tabPage2.Controls.Add(this.label7);
-            this.tabPage2.Controls.Add(this.textBox6);
+            this.tabPage2.Controls.Add(this.tbBuscaNome);
             this.tabPage2.Location = new System.Drawing.Point(4, 24);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -84,21 +84,21 @@ namespace AppCronogramaAula.Views
             this.tabPage2.Text = "Por Nome";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // dataGridViewNomeAluno
             // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewNomeAluno.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewNomeAluno.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewNomeAluno.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Código,
             this.Column3,
             this.Column1,
             this.Column2});
-            this.dataGridView1.Location = new System.Drawing.Point(6, 67);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(645, 171);
-            this.dataGridView1.TabIndex = 3;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridViewNomeAluno.Location = new System.Drawing.Point(6, 67);
+            this.dataGridViewNomeAluno.Name = "dataGridViewNomeAluno";
+            this.dataGridViewNomeAluno.RowTemplate.Height = 25;
+            this.dataGridViewNomeAluno.Size = new System.Drawing.Size(645, 171);
+            this.dataGridViewNomeAluno.TabIndex = 3;
+            this.dataGridViewNomeAluno.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Código
             // 
@@ -120,15 +120,15 @@ namespace AppCronogramaAula.Views
             this.Column2.HeaderText = "E-mail";
             this.Column2.Name = "Column2";
             // 
-            // button4
+            // btnPesquisarNome
             // 
-            this.button4.Location = new System.Drawing.Point(362, 19);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "Pesquisar";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btnPesquisarNome.Location = new System.Drawing.Point(362, 19);
+            this.btnPesquisarNome.Name = "btnPesquisarNome";
+            this.btnPesquisarNome.Size = new System.Drawing.Size(75, 23);
+            this.btnPesquisarNome.TabIndex = 2;
+            this.btnPesquisarNome.Text = "Pesquisar";
+            this.btnPesquisarNome.UseVisualStyleBackColor = true;
+            this.btnPesquisarNome.Click += new System.EventHandler(this.button4_Click);
             // 
             // label7
             // 
@@ -139,12 +139,12 @@ namespace AppCronogramaAula.Views
             this.label7.TabIndex = 1;
             this.label7.Text = "Digite o Nome do Aluno:";
             // 
-            // textBox6
+            // tbBuscaNome
             // 
-            this.textBox6.Location = new System.Drawing.Point(181, 19);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(159, 23);
-            this.textBox6.TabIndex = 0;
+            this.tbBuscaNome.Location = new System.Drawing.Point(181, 19);
+            this.tbBuscaNome.Name = "tbBuscaNome";
+            this.tbBuscaNome.Size = new System.Drawing.Size(159, 23);
+            this.tbBuscaNome.TabIndex = 0;
             // 
             // tabPage1
             // 
@@ -310,7 +310,7 @@ namespace AppCronogramaAula.Views
             this.tabControl1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewNomeAluno)).EndInit();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.ResumeLayout(false);
@@ -336,14 +336,14 @@ namespace AppCronogramaAula.Views
         private System.Windows.Forms.TextBox tbDigiteCodigo;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewNomeAluno;
         private System.Windows.Forms.DataGridViewTextBoxColumn Código;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnPesquisarNome;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox tbBuscaNome;
         private System.Windows.Forms.Label label1;
     }
 }

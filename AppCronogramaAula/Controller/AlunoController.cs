@@ -103,6 +103,28 @@ namespace AppCronogramaAula.Controller
             }
         }
 
+        public static BindingSource visuNomeAluno()
+        {
+            SqlConnection conexao = new SqlConnection(Conexao.conectar());
+            SqlCommand comandos = new SqlCommand("pBuscaNomeAluno", conexao);
+            comandos.CommandType = CommandType.StoredProcedure;
+
+                comandos.Parameters.AddWithValue("@nome", "%"+Aluno.NomeAluno+"%");
+                conexao.Open();
+                comandos.ExecuteNonQuery();
+
+                SqlDataAdapter sqlData = new SqlDataAdapter(comandos);
+                DataTable table = new DataTable();
+
+                sqlData.Fill(table);
+
+                BindingSource dados = new BindingSource();
+                dados.DataSource = table;
+
+                return dados;
+
+        }
+
         public void alterarAluno()
         {
             SqlConnection conexao = new SqlConnection(Conexao.conectar());
