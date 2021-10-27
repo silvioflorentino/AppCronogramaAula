@@ -59,42 +59,34 @@ namespace AppCronogramaAula.Controller
 
 
         }
-        /*
+       
         public void visuCodigoAluno()
         {
-            if (tbCodigoFun.Text == "")
-            {
-                MessageBox.Show("Digite um código para a busca", "Atenção");
-                tbCodigoFun.Focus();
-                return;
-            }
 
             SqlConnection conexao = new SqlConnection(Conexao.conectar());
-            SqlCommand comandos = new SqlCommand("pBuscaCodigoFuncionario", conexao);
+            SqlCommand comandos = new SqlCommand("pBuscaCodigoAluno", conexao);
             comandos.CommandType = CommandType.StoredProcedure;
 
             try
             {
-                comandos.Parameters.AddWithValue("@codigo", tbCodigoFun.Text);
+                
+                comandos.Parameters.AddWithValue("@codigo", Aluno.Codigo);
                 conexao.Open();
 
                 var tabelaDados = comandos.ExecuteReader();
 
                 if (tabelaDados.Read())
                 {
-                    tbNomeFun.Text = tabelaDados["Nome"].ToString();
-                    tbEmailFun.Text = tabelaDados["Email"].ToString();
-                    tbChapaFun.Text = tabelaDados["Chapa"].ToString();
+                   Aluno.NomeAluno = tabelaDados["Nome"].ToString();
+                   Aluno.EmailAluno = tabelaDados["Email"].ToString();
+                   Aluno.FoneAluno = tabelaDados["Telefone"].ToString();
+                    Aluno.Retorno = "True";
 
-                    btnExcluir.Enabled = true;
-                    btnAlterar.Enabled = true;
                 }
                 else
                 {
                     MessageBox.Show("Código não localizado", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Question);
-                    tbNomeFun.Clear();
-                    tbEmailFun.Clear();
-                    tbChapaFun.Clear();
+                    Aluno.Retorno = "False";
                 }
 
             }
@@ -114,24 +106,25 @@ namespace AppCronogramaAula.Controller
         public void alterarAluno()
         {
             SqlConnection conexao = new SqlConnection(Conexao.conectar());
-            SqlCommand comandos = new SqlCommand("pAlterarFuncionario", conexao);
+            SqlCommand comandos = new SqlCommand("pAlterarAluno", conexao);
             comandos.CommandType = CommandType.StoredProcedure;
 
             try
             {
-                comandos.Parameters.AddWithValue("@codigo", tbCodigoFun.Text);
-                comandos.Parameters.AddWithValue("@nome", tbNomeFun.Text);
-                comandos.Parameters.AddWithValue("@email", tbEmailFun.Text);
-                comandos.Parameters.AddWithValue("@chapa", tbChapaFun.Text);
+                comandos.Parameters.AddWithValue("@codigo", Aluno.Codigo);
+                comandos.Parameters.AddWithValue("@nome",Aluno.NomeAluno);
+                comandos.Parameters.AddWithValue("@email", Aluno.EmailAluno);
+                comandos.Parameters.AddWithValue("@telefone", Aluno.FoneAluno);
 
                 conexao.Open();
                 comandos.ExecuteNonQuery();
                 MessageBox.Show("Funcionário Alterado com sucesso!");
-
+                Aluno.Retorno = "True";
             }
             catch
             {
                 MessageBox.Show("Funcionário não alterado.");
+                Aluno.Retorno = "False";
             }
             finally
             {
@@ -145,23 +138,22 @@ namespace AppCronogramaAula.Controller
         public void deletarAluno()
         {
             SqlConnection conexao = new SqlConnection(Conexao.conectar());
-            SqlCommand comandos = new SqlCommand("pDeletarFuncionario", conexao);
+            SqlCommand comandos = new SqlCommand("pDeletarAluno", conexao);
             comandos.CommandType = CommandType.StoredProcedure;
 
             try
             {
-                comandos.Parameters.AddWithValue("@codigo", tbCodigoFun.Text);
+                comandos.Parameters.AddWithValue("@codigo", Aluno.Codigo);
                 conexao.Open();
                 comandos.ExecuteNonQuery();
+                Aluno.Retorno = "True";
                 MessageBox.Show("Funcionário Excluido com sucesso!");
-                tbNomeFun.Clear();
-                tbEmailFun.Clear();
-                tbChapaFun.Clear();
 
             }
             catch
             {
                 MessageBox.Show("Funcionário não Excluido.");
+                Aluno.Retorno = "False";
             }
             finally
             {
@@ -171,6 +163,6 @@ namespace AppCronogramaAula.Controller
                 }
             }
         }
-        */
+       
     }
 }
