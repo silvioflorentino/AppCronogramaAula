@@ -305,7 +305,8 @@ namespace AppCronogramaAula.Views
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tabControl1);
             this.Name = "TelaBuscaAluno";
-            this.Text = "TelaBuscaAluno";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Sistema de Cronograma de Aulas :::: Pesquisa aluno";
             this.Load += new System.EventHandler(this.TelaBuscaAluno_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);

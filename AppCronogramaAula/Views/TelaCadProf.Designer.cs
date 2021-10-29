@@ -43,7 +43,7 @@ namespace CronogramaAula.Views
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(166, 9);
+            this.label1.Location = new System.Drawing.Point(113, 34);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(290, 32);
             this.label1.TabIndex = 0;
@@ -53,7 +53,7 @@ namespace CronogramaAula.Views
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(174, 86);
+            this.label2.Location = new System.Drawing.Point(60, 104);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(71, 25);
             this.label2.TabIndex = 1;
@@ -63,7 +63,7 @@ namespace CronogramaAula.Views
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(174, 123);
+            this.label3.Location = new System.Drawing.Point(60, 141);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(64, 25);
             this.label3.TabIndex = 2;
@@ -73,7 +73,7 @@ namespace CronogramaAula.Views
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(174, 158);
+            this.label4.Location = new System.Drawing.Point(60, 176);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(61, 25);
             this.label4.TabIndex = 3;
@@ -81,31 +81,31 @@ namespace CronogramaAula.Views
             // 
             // tbNomeProf
             // 
-            this.tbNomeProf.Location = new System.Drawing.Point(252, 88);
+            this.tbNomeProf.Location = new System.Drawing.Point(138, 106);
             this.tbNomeProf.Name = "tbNomeProf";
-            this.tbNomeProf.Size = new System.Drawing.Size(185, 23);
+            this.tbNomeProf.Size = new System.Drawing.Size(304, 23);
             this.tbNomeProf.TabIndex = 4;
             // 
             // tbFoneProf
             // 
-            this.tbFoneProf.Location = new System.Drawing.Point(252, 160);
+            this.tbFoneProf.Location = new System.Drawing.Point(138, 178);
             this.tbFoneProf.Name = "tbFoneProf";
             this.tbFoneProf.Size = new System.Drawing.Size(185, 23);
             this.tbFoneProf.TabIndex = 5;
             // 
             // tbEmailProf
             // 
-            this.tbEmailProf.Location = new System.Drawing.Point(252, 125);
+            this.tbEmailProf.Location = new System.Drawing.Point(138, 143);
             this.tbEmailProf.Name = "tbEmailProf";
-            this.tbEmailProf.Size = new System.Drawing.Size(185, 23);
+            this.tbEmailProf.Size = new System.Drawing.Size(304, 23);
             this.tbEmailProf.TabIndex = 6;
             // 
             // btnCadProf
             // 
             this.btnCadProf.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnCadProf.Location = new System.Drawing.Point(184, 227);
+            this.btnCadProf.Location = new System.Drawing.Point(303, 262);
             this.btnCadProf.Name = "btnCadProf";
-            this.btnCadProf.Size = new System.Drawing.Size(253, 33);
+            this.btnCadProf.Size = new System.Drawing.Size(170, 33);
             this.btnCadProf.TabIndex = 7;
             this.btnCadProf.Text = "Cadastrar";
             this.btnCadProf.UseVisualStyleBackColor = true;
@@ -115,7 +115,7 @@ namespace CronogramaAula.Views
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(603, 306);
+            this.ClientSize = new System.Drawing.Size(507, 324);
             this.Controls.Add(this.btnCadProf);
             this.Controls.Add(this.tbEmailProf);
             this.Controls.Add(this.tbFoneProf);
@@ -124,8 +124,10 @@ namespace CronogramaAula.Views
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "TelaCadProf";
-            this.Text = "TelaCadProf";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Sistema de Cronograma de Aulas ::::  Cadastro de Professor.";
             this.ResumeLayout(false);
             this.PerformLayout();
 

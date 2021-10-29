@@ -18,7 +18,7 @@ namespace AppCronogramaAula.Controller
 
             try
             {
-                MessageBox.Show(Aluno.NomeAluno + Aluno.EmailAluno + Aluno.FoneAluno);
+            
                 comando.Parameters.AddWithValue("@nome",Aluno.NomeAluno );
                 comando.Parameters.AddWithValue("@email", Aluno.EmailAluno);
                 comando.Parameters.AddWithValue("@telefone", Aluno.FoneAluno);
@@ -29,8 +29,8 @@ namespace AppCronogramaAula.Controller
                 conexao.Open();
                 comando.ExecuteNonQuery();
 
-                var resposta = MessageBox.Show("Aluno cadastrado com sucesso. ," +
-                    "Deseja cadastrar outro Aluno?",
+                var resposta = MessageBox.Show("Aluno cadastrado com sucesso! \n" +
+                    "Deseja cadastrar outro Aluno ?",
                     "Novo Registro", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
 
                 if (resposta == DialogResult.Yes)
@@ -108,8 +108,8 @@ namespace AppCronogramaAula.Controller
             SqlConnection conexao = new SqlConnection(Conexao.conectar());
             SqlCommand comandos = new SqlCommand("pBuscaNomeAluno", conexao);
             comandos.CommandType = CommandType.StoredProcedure;
-
-                comandos.Parameters.AddWithValue("@nome", "%"+Aluno.NomeAluno+"%");
+           
+            comandos.Parameters.AddWithValue("@nome", "%"+Aluno.NomeAluno+"%");
                 conexao.Open();
                 comandos.ExecuteNonQuery();
 

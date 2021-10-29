@@ -51,7 +51,7 @@ namespace CronogramaAula.Views
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(181, 9);
+            this.label1.Location = new System.Drawing.Point(139, 31);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(240, 32);
             this.label1.TabIndex = 0;
@@ -61,7 +61,7 @@ namespace CronogramaAula.Views
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(128, 91);
+            this.label2.Location = new System.Drawing.Point(74, 94);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(71, 25);
             this.label2.TabIndex = 1;
@@ -71,7 +71,7 @@ namespace CronogramaAula.Views
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(128, 162);
+            this.label3.Location = new System.Drawing.Point(74, 165);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(247, 25);
             this.label3.TabIndex = 2;
@@ -81,7 +81,7 @@ namespace CronogramaAula.Views
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(128, 126);
+            this.label4.Location = new System.Drawing.Point(74, 129);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(224, 25);
             this.label4.TabIndex = 3;
@@ -91,7 +91,7 @@ namespace CronogramaAula.Views
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(213, 203);
+            this.label5.Location = new System.Drawing.Point(159, 206);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(0, 25);
             this.label5.TabIndex = 4;
@@ -100,7 +100,7 @@ namespace CronogramaAula.Views
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(126, 207);
+            this.label6.Location = new System.Drawing.Point(72, 210);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(87, 25);
             this.label6.TabIndex = 5;
@@ -108,15 +108,15 @@ namespace CronogramaAula.Views
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(220, 92);
+            this.textBox1.Location = new System.Drawing.Point(151, 96);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 23);
+            this.textBox1.Size = new System.Drawing.Size(286, 23);
             this.textBox1.TabIndex = 6;
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(358, 128);
+            this.dateTimePicker1.Location = new System.Drawing.Point(327, 131);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(110, 23);
             this.dateTimePicker1.TabIndex = 7;
@@ -125,16 +125,16 @@ namespace CronogramaAula.Views
             // dateTimePicker2
             // 
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(381, 164);
+            this.dateTimePicker2.Location = new System.Drawing.Point(327, 167);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(100, 23);
+            this.dateTimePicker2.Size = new System.Drawing.Size(110, 23);
             this.dateTimePicker2.TabIndex = 8;
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.checkBox1.Location = new System.Drawing.Point(220, 206);
+            this.checkBox1.Location = new System.Drawing.Point(166, 209);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(92, 29);
             this.checkBox1.TabIndex = 9;
@@ -145,7 +145,7 @@ namespace CronogramaAula.Views
             // 
             this.checkBox2.AutoSize = true;
             this.checkBox2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.checkBox2.Location = new System.Drawing.Point(318, 206);
+            this.checkBox2.Location = new System.Drawing.Point(264, 209);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(80, 29);
             this.checkBox2.TabIndex = 10;
@@ -156,7 +156,7 @@ namespace CronogramaAula.Views
             // 
             this.checkBox3.AutoSize = true;
             this.checkBox3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.checkBox3.Location = new System.Drawing.Point(401, 206);
+            this.checkBox3.Location = new System.Drawing.Point(347, 209);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(80, 29);
             this.checkBox3.TabIndex = 11;
@@ -166,9 +166,9 @@ namespace CronogramaAula.Views
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(128, 254);
+            this.button1.Location = new System.Drawing.Point(281, 267);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(353, 35);
+            this.button1.Size = new System.Drawing.Size(214, 35);
             this.button1.TabIndex = 12;
             this.button1.Text = "Cadastrar Turma";
             this.button1.UseVisualStyleBackColor = true;
@@ -179,7 +179,7 @@ namespace CronogramaAula.Views
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(617, 336);
+            this.ClientSize = new System.Drawing.Size(507, 324);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.checkBox3);
             this.Controls.Add(this.checkBox2);
@@ -193,8 +193,10 @@ namespace CronogramaAula.Views
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "TelaCadTurma";
-            this.Text = "TelaCadTurma";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Sistema de Cronograma de Aulas ::::  Cadastro de Sala";
             this.Load += new System.EventHandler(this.TelaCadTurma_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);

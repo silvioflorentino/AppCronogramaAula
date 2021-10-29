@@ -18,7 +18,7 @@ namespace AppCronogramaAula
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Views.TelaBuscaAluno());
+            Application.Run(new Views.Menu());
         }
     }
 }
